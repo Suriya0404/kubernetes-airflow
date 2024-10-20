@@ -16,8 +16,8 @@ t1 = BashOperator(task_id="hello",
                   bash_command='echo "Hello World!"',
                   dag=dag)
 
-t2 = BashOperator(task_id="hello",
-                  bash_command='echo "Hello World!"',
+t2 = BashOperator(task_id="kubernetes",
+                  bash_command='echo "Hello kubernetes!"',
                   dag=dag)
 
 t1 >> t2
